@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Гра: Влуч по яблуках</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Влуч по яблуках 🍎</h1>
+
+   <div id="startScreen">
+    <button id="startButton">▶️ Почати гру</button>
+  </div>
+
+  <div id="hud" style="display: none;">
+    <div>Очки: <span id="score">0</span></div>
+    <div>Життя: <span id="lives">3</span></div>
+    <div>Час: <span id="timer">60</span> сек</div>
+  </div>
+
+  <div id="gameArea" style="display: none;"></div>
+
+  <div id="gameOver">
+    <h2>Гру завершено!</h2>
+    <p>Твій результат: <span id="finalScore">0</span></p>
+    <button onclick="restartGame()">Грати ще раз</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
